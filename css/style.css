@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../img/math-curriculum.webp);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+
+section .calculadora{
+    margin: 10px;
+    padding: 4%;
+    text-align: center;
+    background: rgba(51, 255, 28, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(2, 129, 21, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+border: 1px solid rgba(43, 146, 29, 0.3);
+}
+
+section .calculadora h1{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calculadora #res{
+    padding: 16px 0;
+    margin: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.shape{
+    padding: 12px;
+    margin: 12px;
+}
+
+section .btn-calc{
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: none;
+    transition: 1s;
+    border-radius: 12px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.btn-calc:hover{
+    background-color: #d8bdbd;
+    transform: scale(1.1);
+}
+
+i{
+    color: red;
+    transform: 1s;
+    padding: 10px;
+}
+
+i:hover{
+    color: #000000;
+    transition: 0.5s;
+}
+
+/* Media */
+
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    section{
+        padding: 8%;
+    }
+    
+    section .calculadora{
+        margin: 20px;
+        padding: 4%;
+        text-align: center;
+    }
+    
+    section .calculadora h1{
+        font-size: 26px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .calculadora #res{
+        padding: 16px 0;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .shape{
+        padding: 16px;
+        margin: 18px;
+    }
+
+    section .btn-calc{
+        width: 50px;
+        height: 50px;
+        padding: 4px;
+        margin: 2px;
+        cursor: pointer;
+        background-color: #f4f4f4;
+        border: none;
+        border-radius: 12px;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .btn-calc:hover{
+        background-color: #f4f4f4;
+        transform: none;
+    }
+    
+    i{
+        color: inherit;
+        padding: 10px;
+    }
+    
+    i:hover{
+        color: inherit;
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section{
+        padding: 2%;
+    }
+    
+    section .calculadora{
+        margin: 12px;
+        padding: 2%;
+        text-align: center;
+    }
+    
+    section .calculadora h1{
+        font-size: 26px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .calculadora #res{
+        padding: 16px 0;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .shape{
+        padding: 16px;
+        margin: 18px;
+    }
+
+    section .btn-calc{
+        width: 50px;
+        height: 50px;
+        padding: 4px;
+        margin: 2px;
+        cursor: pointer;
+        background-color: #f4f4f4;
+        border: none;
+        transition: 1s;
+        border-radius: 12px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .btn-calc:hover{
+        background-color: #f4f4f4;
+        transform: none;
+    }
+    
+    i{
+        color: inherit;
+        transform: 1s;
+        padding: 10px;
+    }
+    
+    i:hover{
+        color: inherit;
+        transition: none;
+    }
+}
